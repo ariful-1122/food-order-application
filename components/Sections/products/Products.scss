@@ -1,0 +1,15 @@
+.product__items {
+  display: grid;
+  // grid-template-columns: repeat(3, minmax(0, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2.5rem;
+  padding: 2rem calc(3vw + 3px);
+  list-style: none;
+
+  // @media only screen and (max-width: 768px) {
+  //   grid-template-columns: repeat(2, minmax(0, 1fr));
+  // }
+  // @media only screen and (max-width: 576px) {
+  //   grid-template-columns: repeat(1, minmax(0, 1fr));
+  // }
+}

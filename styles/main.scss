@@ -1,0 +1,16 @@
+@import "./base";
+@import "./variable";
+
+//================| Components |===============//
+
+@import "../components/Layouts/Layout.scss";
+@import "../components/UI/HeaderCartButton/HeaderCartButton.scss";
+@import "../components/Layouts/MainNavigation.scss";
+@import "../components/Sections/hero/Hero.scss";
+@import "../components/UI/Button/button.scss";
+@import "../components/UI/Card/Card.scss";
+@import "../components/Sections/overview/OverViewText.scss";
+@import "../components/UI/Modals/CartModal.scss";
+@import "../components/Sections/products/Products.scss";
+@import "../components/Sections/products/ProductItem.scss";
+@import "../components/Sections/products/ProductItemForm.scss";

@@ -1,0 +1,22 @@
+.overview {
+  max-width: 60rem;
+  width: 90%;
+  text-align: center;
+  background-color: $color-grey-dark-1;
+  box-shadow: $shadow-dark;
+  padding: 3rem;
+  margin: 0 auto;
+  top: -5rem;
+  border-radius: 1rem;
+  position: relative;
+
+  &__text {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}
