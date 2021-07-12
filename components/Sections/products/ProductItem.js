@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProductItemForm from "./ProductItemForm";
 import { CART_ADD_ITEM } from "../../../redux/constants/cart/cart";
 import { useDispatch } from "react-redux";
+// import Image from "next/image";
 
 const ProductItem = (props) => {
   const dispatch = useDispatch();

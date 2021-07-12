@@ -1,24 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
-import NavLink from "next/link";
 import HeaderCartButton from "../UI/HeaderCartButton/HeaderCartButton";
 import { useSelector } from "react-redux";
+import Image from "next/image";
 
 const MainNavigation = () => {
-  
   const items = useSelector((state) => state.cart.items);
   const totalQty = items.reduce((currNum, item) => {
     return currNum + item.qty;
   }, 0);
-
-  
 
   return (
     <header className="header">
       <div>
         <Link href="/">
           <a className="header__logo">
-            <img src="/images/LOGOS/6.png" />
+            <img src="/images/LOGOS/6.png" alt="logo" />
           </a>
         </Link>
       </div>
