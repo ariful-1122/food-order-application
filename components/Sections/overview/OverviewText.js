@@ -5,7 +5,7 @@ const OverviewText = () => {
     <div className="overview">
       <p className="overview__text">
         The more natural or eco-based products you can introduce into your
-        beauty regimen, It's similar to introducing organic food into your daily
+        beauty regimen, Its similar to introducing organic food into your daily
         diet.
       </p>
       <p className="overview__text">
