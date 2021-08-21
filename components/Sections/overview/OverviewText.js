@@ -4,13 +4,13 @@ const OverviewText = () => {
   return (
     <div className="overview">
       <p className="overview__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid
-        illum cum voluptatibus sint porro quae veritatis debitis necessitatibus
-        nulla.
+        The more natural or eco-based products you can introduce into your
+        beauty regimen, It's similar to introducing organic food into your daily
+        diet.
       </p>
       <p className="overview__text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
-        laboriosam explicabo? Mollitia in est eaque.
+        If we as a society are willing to have a preference for organic food,
+        the farmer can pass on the savings.
       </p>
     </div>
   );

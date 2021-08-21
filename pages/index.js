@@ -8,12 +8,12 @@ import CartModal from "../components/UI/Modals/CartModal";
 const Home = () => {
   const { isShown } = useSelector((state) => state.modal);
   return (
-    <div>
+    <>
       {isShown && <CartModal />}
       <Hero />
       <OverviewText />
       <Products />
-    </div>
+    </>
   );
 };
 
