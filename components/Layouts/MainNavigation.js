@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import HeaderCartButton from "../UI/HeaderCartButton/HeaderCartButton";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";
 
 const MainNavigation = () => {
+  const dispatch = useDispatch();
+  const [keyword, setKeyword] = useState("");
   const items = useSelector((state) => state.cart.items);
   const totalQty = items.reduce((currNum, item) => {
     return currNum + item.qty;
   }, 0);
+
+  // const searchHandler = (e) => {
+  //   e.preventDefault();
+  //   dispatch({
+  //     type: "SEARCH_PRODUCTS",
+  //     payload: keyword,
+  //   });
+  // };
 
   return (
     <header className="header">
@@ -19,11 +29,22 @@ const MainNavigation = () => {
           </a>
         </Link>
       </div>
-
-      <div className="header__search">
-        <input placeholder="Search anything" type="text" />
-        <button> 🔍 </button>
-      </div>
+      <form>
+        <div className="header__search">
+          <input
+            // value={keyword}
+            onChange={(e) =>
+              dispatch({
+                type: "SEARCH_PRODUCTS",
+                payload: e.target.value,
+              })
+            }
+            placeholder="Search food.."
+            type="text"
+          />
+          <button> 🔍 </button>
+        </div>
+      </form>
 
       <nav className="header__nav">
         <ul className="header__nav-lists">
