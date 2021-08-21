@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const MainNavigation = () => {
   const dispatch = useDispatch();
-  const [keyword, setKeyword] = useState("");
+  // const [keyword, setKeyword] = useState("");
   const items = useSelector((state) => state.cart.items);
   const totalQty = items.reduce((currNum, item) => {
     return currNum + item.qty;
@@ -29,22 +29,21 @@ const MainNavigation = () => {
           </a>
         </Link>
       </div>
-      <form>
-        <div className="header__search">
-          <input
-            // value={keyword}
-            onChange={(e) =>
-              dispatch({
-                type: "SEARCH_PRODUCTS",
-                payload: e.target.value,
-              })
-            }
-            placeholder="Search food.."
-            type="text"
-          />
-          <button> 🔍 </button>
-        </div>
-      </form>
+
+      <div className="header__search">
+        <input
+          // value={keyword}
+          onChange={(e) =>
+            dispatch({
+              type: "SEARCH_PRODUCTS",
+              payload: e.target.value,
+            })
+          }
+          placeholder="Search food"
+          type="text"
+        />
+        <button> 🔍 </button>
+      </div>
 
       <nav className="header__nav">
         <ul className="header__nav-lists">
