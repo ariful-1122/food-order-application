@@ -1,13 +1,17 @@
 .header {
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
+
+  right: 0;
   z-index: 3;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: $color-primary-light;
   padding: 0 calc(3vw + 4px);
-  height: 7rem;
+  height: 70px;
 
   &__logo img {
     height: 14rem;

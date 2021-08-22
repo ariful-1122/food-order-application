@@ -12,14 +12,6 @@ const MainNavigation = () => {
     return currNum + item.qty;
   }, 0);
 
-  // const searchHandler = (e) => {
-  //   e.preventDefault();
-  //   dispatch({
-  //     type: "SEARCH_PRODUCTS",
-  //     payload: keyword,
-  //   });
-  // };
-
   return (
     <header className="header">
       <div>
