@@ -2,7 +2,7 @@ import React from "react";
 import CartModal from "../../components/UI/Modals/CartModal";
 import { useSelector } from "react-redux";
 
-const index = () => {
+const Index = () => {
   const isShown = useSelector((state) => state.modal.isShown);
   return (
     <div>
@@ -12,4 +12,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

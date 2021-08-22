@@ -53,12 +53,14 @@ const Footer = () => {
             <div className="social-links">
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.facebook.com/profile.php?id=100009063073831"
               >
                 <i className="fab fa-facebook-f" />
               </a>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/developer-ariful/"
               >
                 <i className="fab fa-linkedin" />
@@ -66,7 +68,11 @@ const Footer = () => {
               <a href="#">
                 <i className="fab fa-instagram" />
               </a>
-              <a target="_blank" href="https://twitter.com/ariful_1122">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/ariful_1122"
+              >
                 <i className="fab fa-twitter" />
               </a>
             </div>
